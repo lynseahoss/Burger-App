@@ -1,0 +1,10 @@
+INSERT INTO burgers (name, devour) VALUES ('Open Seasame Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Kales From the Crypt Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Knife to Meet You Burger Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('I Dont Bay Leaf in Magic Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('The Grand Brie Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Top Bun Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Winter Muensterland Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('National Pass-Thyme Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Is This Your Chard Burger', true);
+INSERT INTO burgers (name, devour) VALUES ('Bean Spirit Burger', true);
