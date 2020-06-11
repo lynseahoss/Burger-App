@@ -1,11 +1,11 @@
 
-  <h1 class="bestBurger">Best Burgers to Eat</h1>
+  <h1 class="bestBurger">Best Burgers of the Day</h1>
   <div class="ui one column doubling stackable centered grid container">
 
      <img src ="../assets/images/LindseyLawsonBurger.png" alt = "Burger Image">
     </div>
 </div>
-  <h3>Enter Burger of the Day</h3>
+  <h3>Enter Your Favourite Burger</h3>
 <div class="ui centered container">
   
   
@@ -23,8 +23,8 @@
 <h2>Burger of the Day</h2>
     <ol>
   {{#each burgers}}
-    {{#unless devour}}
-      {{> burgers/burger-block sleep=true}}
+    {{#unless eat}}
+      {{> burgers/burger-block devour=false}}
     {{/unless}}
   {{/each}}
 </ol>
@@ -39,6 +39,9 @@
 
 <ol>
   {{#each burgers}}
+    {{#unless eat}}
+      {{> burgers/burger-block devour=true}}
+    {{/unless}}
   {{/each}}
 </ol>
   </div>
