@@ -1,50 +1,55 @@
-
-  <h1 class="bestBurger">Best Burgers of the Day</h1>
+<div class="ui center aligned container">
+  <h1 class="bestBurger">Burgers of the Day</h1>
   <div class="ui one column doubling stackable centered grid container">
 
      <img src ="../assets/images/LindseyLawsonBurger.png" alt = "Burger Image">
     </div>
-</div>
-  <h3>Enter Your Favourite Burger</h3>
-<div class="ui centered container">
-  
-  
-<div class="ui inverted segment">
-  <div class="ui fluid inverted input">
-    <input type="text" id="ca" name="name" placeholder="Enter Burger of the Day">
-    <button class="ui inverted pink button" id="burger-submit">Submit</button>
-  </div>
-    
-  </div>
-  </div>
 
-<div class="ui three column doubling stackable centered page grid ">
-  <div class="column"> 
+  
+
+  
+<div class="ui internally celled grid">
+  <div class="row">
+    <div class="five wide column">
+    
+ 
 <h2>Burger of the Day</h2>
     <ol>
   {{#each burgers}}
-    {{#unless eat}}
-      {{> burgers/burger-block devour=false}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ol>
+ 
+    </div>
+<div class="six wide column">
+    
+  <div class="ui inverted segment">
+  <div class="ui inverted form">
+      <div class="field">
+        <label><h3>Enter Your Favourite Burger</h3></label>
+        <input placeholder="Enter Burger Name" id="bobsBurger" type="text">
+      </div>
+     <button class="fluid ui inverted pink button" id="burger-submit">Submit</button>
   </div>
-  
-  <div class="column">
-    <p></p>
-    <p></p>
-  </div>
-  <div class="column">
+</div>
+    </div>
+    <div class="five wide column">
+        
    <h2>Devoured Burgers</h2>
 
 <ol>
   {{#each burgers}}
-    {{#unless eat}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/if}}
   {{/each}}
 </ol>
-  </div>
+
+</div>
+    </div>
+ </div>
 </div>
 
 

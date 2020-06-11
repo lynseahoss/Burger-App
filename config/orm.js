@@ -48,7 +48,7 @@ const orm = {
     });
   },
   insertOne: (table, cols, vals, cb) => {
-    const queryString = "INSERT INTO " + table;
+    let queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
@@ -69,7 +69,7 @@ const orm = {
   },
   // An example of objColVals would be {burger: Poblano Picasso Burger, devour: true}
   updateOne: (table, objColVals, condition, cb) => {
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);

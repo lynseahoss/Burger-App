@@ -1,8 +1,10 @@
 <li>
-	{{name}}
-<button class="change-devour ui inverted purple button" data-id="{{id}}" data-newdevour="{{eat}}">
-	
-		{{#if eat}}Devour{{/if}}
+	{{burger_name}}
+    {{#unless devoured}}
+    <br>
+<button id="change-devour" class="mini ui inverted purple button" value={{id}} >
+    
+		Devour!
 	</button>
-
+{{/unless}}
 </li>
