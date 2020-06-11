@@ -1,0 +1,54 @@
+
+  <h1 class="bestBurger">Best Burgers to Eat</h1>
+  <div class="ui one column doubling stackable centered grid container">
+
+     <img src ="../assets/images/LindseyLawsonBurger.png" alt = "Burger Image">
+    </div>
+</div>
+  <h3>Enter Burger of the Day</h3>
+<div class="ui centered container">
+  
+  
+<div class="ui inverted segment">
+  <div class="ui fluid inverted input">
+    <input type="text" id="ca" name="name" placeholder="Enter Burger of the Day">
+    <button class="ui inverted pink button" id="burger-submit">Submit</button>
+  </div>
+    
+  </div>
+  </div>
+
+<div class="ui three column doubling stackable centered page grid ">
+  <div class="column"> 
+<h2>Burger of the Day</h2>
+    <ol>
+  {{#each burgers}}
+    {{#unless devour}}
+      {{> burgers/burger-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ol>
+  </div>
+  
+  <div class="column">
+    <p></p>
+    <p></p>
+  </div>
+  <div class="column">
+   <h2>Devoured Burgers</h2>
+
+<ol>
+  {{#each burgers}}
+  {{/each}}
+</ol>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

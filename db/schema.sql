@@ -1,6 +1,3 @@
--- Deletes the database burger_db if already in use 
-DROP DATABASE IF EXISTS
-
 -- Create the database burger_db and specified it for use.
 CREATE DATABASE burger_db;
 USE burger_db;
